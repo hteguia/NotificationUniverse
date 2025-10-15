@@ -22,7 +22,7 @@ jobs:
           
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/notification-universe:latest .
+          docker build ./src/Api/Dockerfile -t ${{ secrets.DOCKERHUB_USERNAME }}/notification-universe:latest .
 
       - name: Push Docker image
         run: |
