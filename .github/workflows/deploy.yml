@@ -49,7 +49,7 @@ jobs:
               -p 5000:80 \
               -e MAILSETTINGS__URL=${{ vars.MAILSETTINGS__URL }} \
               -e MAILSETTINGS__FROM=${{ vars.MAILSETTINGS__FROM }} \
-               -e MAILSETTINGS__TOKEN=${{ secrets.MAILSETTINGS__TOKEN }} \
+              -e MAILSETTINGS__TOKEN=${{ secrets.MAILSETTINGS__TOKEN }} \
               ${{ vars.DOCKER_REGISTRY }}/${{ vars.IMAGE_NAME }}:${{ vars.IMAGE_TAG }}
           
           
