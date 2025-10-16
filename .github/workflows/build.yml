@@ -1,4 +1,4 @@
-name: Angular Build and deploy Pipeline
+name: Build App
 
 on: 
   push:
@@ -7,7 +7,7 @@ on:
       
 jobs:
   web-deploy:
-    name: Build and Deploy Angular App
+    name: Build App
     runs-on: ubuntu-latest
 
     steps:
